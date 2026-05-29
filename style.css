@@ -1,47 +1,49 @@
-body{
-    background-color: #ccf8f3de;
-    font-weight: bold;
+body {
+    background: linear-gradient(13deg, #DC0000, #050E3C);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
 }
 
-table{
-    color: #6E70B9;
+table {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-collapse: collapse;
     margin: auto;
-    box-shadow: 3px 3px 3px rgb(48, 47, 47);
+    overflow: hidden;
+    color: white;
+    width: 90%;
+    table-layout: fixed; 
 }
 
-th,
-td {
-    border: 3px solid #FFBF69;
+th, td {
+    padding: 15px 10px;
     text-align: center;
-    vertical-align: center;
-    padding: 6px;
-    width: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.08); 
+    vertical-align: middle;
 }
 
-th{
-    font-size: 20px;
-    padding: 15px;
+td {
+    position: relative;
 }
 
-td span{
+.ora {
     display: block;
-    margin-bottom: 5px;
+    font-weight: 700;
+    color: #FFD166;
+    margin-bottom: 2px;
 }
 
-.terem{
-    font-size: 15px;
-    color: #2EC4B6;
-    font-weight: bold;
-}
-
-.ora{
-    font-weight: bold;
-    margin-top: 8px;
-    font-size: large;
-    color: #FF9F1C;
-}
-
-.oraszam{
-width: 10px;
+.terem {
+    display: block;
+    font-size: 0.75em;
+    color: #88D8C0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
