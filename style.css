@@ -1,49 +1,125 @@
 body {
-    background: linear-gradient(13deg, #DC0000, #050E3C);
+    background: linear-gradient(135deg, #0f172a, #1e1b4b);
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    color: white;
 }
 
-table {
+.container {
+    width: 95%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* Évfolyam választó gombok stílusa */
+.tabs {
+    display: flex;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 20px;
+    padding: 8px;
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-collapse: collapse;
-    margin: auto;
-    overflow: hidden;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
     color: white;
-    width: 90%;
-    table-layout: fixed; 
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.tab-btn.active {
+    background: #6366f1;
+    color: white;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+/* Táblázat alapbeállítások (Kifejezetten kiszedtem a table-layout: fixed-et, hogy ne nyomja szét a görgő) */
+.orarend-table {
+    display: none;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.orarend-table.active {
+    display: table;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 th, td {
-    padding: 15px 10px;
+    padding: 14px 10px;
     text-align: center;
-    border: 1px solid rgba(255, 255, 255, 0.08); 
+    border: 1px solid rgba(255, 255, 255, 0.05);
     vertical-align: middle;
+}
+
+thead th {
+    background: rgba(255, 255, 255, 0.05);
+    font-weight: 600;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    width: 17%; /* Egyenletes oszlopszélesség-elosztás a napoknak */
 }
 
 td {
     position: relative;
+    transition: background 0.2s;
+}
+
+td:hover {
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .ora {
     display: block;
     font-weight: 700;
-    color: #FFD166;
-    margin-bottom: 2px;
+    color: #38bdf8;
+    margin-bottom: 3px;
+    font-size: 0.9rem;
 }
 
 .terem {
     display: block;
-    font-size: 0.75em;
-    color: #88D8C0;
+    font-size: 0.75rem;
+    color: #34d399;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    font-weight: 500;
+}
+
+/* Óraszám oszlopok keskenyebbre vétele */
+.oraszam, .oraszam-col {
+    color: #64748b;
+    font-size: 0.85rem;
+    width: 35px !important;
 }

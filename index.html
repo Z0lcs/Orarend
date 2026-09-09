@@ -9,84 +9,345 @@
 </head>
 
 <body>
-    <table>
-        <caption><h1>Zolcs órarend</h1></caption>
-        <thead>
-            <tr>
-                <th></th>
-                <th>Hétfő</th>
-                <th>Kedd</th>
-                <th>Szerda</th>
-                <th>Csütrötök</th>
-                <th>Péntek</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th class="oraszam">1.</th>
-                <td><span class="ora">Gym</span><span class="terem">Béla</span></td>
-                <td><span class="ora">Angol</span><span class="terem">A2</span></td>
-                <td><span class="ora"></span><span class="terem"></span></td>
-                <td><span class="ora">Gym</span><span class="terem">Béla</span></td>
-                <td><span class="ora">Szakmai Angol</span><span class="terem">Könyvtár olvasó</span></td>
-                <th class="oraszam">1.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">2.</th>
-                <td><span class="ora">Ofő</span><span class="terem">35</span></td>
-                <td><span class="ora">Tesi</span><span class="terem">TT2</span></td>
-                <td rowspan="4"><span class="ora">Asztali prog.</span><span class="terem">CAD2</span></td>
-                <td><span class="ora">Történelem</span><span class="terem">35</span></td>
-                <td rowspan="3"><span class="ora">IKT</span><span class="terem">57</span></td>
-                <th class="oraszam">2.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">3.</th>
-                <td><span class="ora">Tesi</span><span class="terem">TT2</span></td>
-                <td><span class="ora">Történelem</span><span class="terem">35</span></td>
-                <td><span class="ora">Matek</span><span class="terem">35</span></td>
-                <th class="oraszam">3.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">4.</th>
-                <td><span class="ora">Matek</span><span class="terem">31</span></td>
-                <td><span class="ora">Matek</span><span class="terem">31</span></td>
-                <td rowspan="2"><span class="ora">Angol</span><span class="terem">A2</span></td>
-                <th class="oraszam">4.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">5.</th>
-                <td><span class="ora">Fizika</span><span class="terem">35</span></td>
-                <td rowspan="2"><span class="ora">Irodalom</span><span class="terem">35</span></td>
-                <td rowspan="3"><span class="ora">Webprog.</span><span class="terem">CAD1</span></td>
-                <th class="oraszam">5.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">6.</th>
-                <td><span class="ora">Irodalom</span><span class="terem">35</span></td>
-                <td><span class="ora">Szakmai Angol</span><span class="terem">19</span></td>
-                <td><span class="ora">Matek</span><span class="terem">35</span></td>
-                <th class="oraszam">6.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">7.</th>
-                <td><span class="ora">Nyelvtan</span><span class="terem">35</span></td>
-                <td><span class="ora">Angol</span><span class="terem">A2</span></td>
-                <td rowspan="2"><span class="ora">Adatbázis kezelés</span><span class="terem">HIDR</span></td>
-                <td><span class="ora">Fizika</span><span class="terem">35</span></td>
-                <th class="oraszam">7.</th>
-            </tr>
-            <tr>
-                <th class="oraszam">8.</th>
-                <td></td>
-                <td><span class="ora">Gym</span><span class="terem">Béla</span></td>
-                <td><span class="ora">Tesi</span><span class="terem">TT1</span></td>
-                <td></td>
-                <th class="oraszam">8.</th>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <!-- Évfolyam választó gombok -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="switchTable('t2026')">2026/27</button>
+            <button class="tab-btn" onclick="switchTable('t2025')">2025/26</button>
+            <button class="tab-btn" onclick="switchTable('t2024')">2024/25</button>
+            <button class="tab-btn" onclick="switchTable('t2023')">2023/24</button>
+        </div>
+
+        <!-- 2026/27 Órarend -->
+        <table id="t2026" class="orarend-table active">
+            <thead>
+                <tr>
+                    <th class="oraszam-col"></th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                    <th class="oraszam-col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="oraszam">1.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">Matek</span><span class="terem">71</span></td>
+                    <td><span class="ora">Angol</span><span class="terem">A2</span></td>
+                    <td rowspan="2"><span class="ora">Asztali alk. fejl.</span><span class="terem">CAD1</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">1.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">2.</th>
+                    <td rowspan="2"><span class="ora">Webprog.</span><span class="terem">CAD1</span></td>
+                    <td><span class="ora">Államp is.</span><span class="terem">71</span></td>
+                    <td rowspan="2"><span class="ora">Történelem</span><span class="terem">19</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">2.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">3.</th>
+                    <td><span class="ora">Magyar</span><span class="terem">71</span></td>
+                    <td rowspan="2"><span class="ora">Szoftverfej.</span><span class="terem">CAD2</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">3.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">4.</th>
+                    <td><span class="ora">Asztali alk. fej.</span><span class="terem">CAD1</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">71</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">84</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">4.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">5.</th>
+                    <td rowspan="3"><span class="ora">IKT</span><span class="terem">CAD1</span></td>
+                    <td rowspan="2"><span class="ora">Angol</span><span class="terem">A5</span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT2</span></td>
+                    <td rowspan="2"><span class="ora">Adatbázis</span><span class="terem">?/56</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">5.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">6.</th>
+                    <td><span class="ora">Irodalom</span><span class="terem">A1</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">6.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">7.</th>
+                    <td><span class="ora">Tesi</span><span class="terem">TT1</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td rowspan="2"><span class="ora">Szakmai Angol</span><span class="terem">B2/6elm</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">7.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">8.</th>
+                    <td><span class="ora">Matek</span><span class="terem">A2</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">8.</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2025/26 Órarend -->
+        <table id="t2025" class="orarend-table">
+            <thead>
+                <tr>
+                    <th class="oraszam-col"></th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                    <th class="oraszam-col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="oraszam">1.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">Angol</span><span class="terem">A2</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">Szakmai Angol</span><span class="terem">Könyvtár olvasó</span></td>
+                    <th class="oraszam">1.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">2.</th>
+                    <td><span class="ora">Ofő</span><span class="terem">35</span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT2</span></td>
+                    <td rowspan="4"><span class="ora">Asztali prog.</span><span class="terem">CAD2</span></td>
+                    <td><span class="ora">Történelem</span><span class="terem">35</span></td>
+                    <td rowspan="3"><span class="ora">IKT</span><span class="terem">57</span></td>
+                    <th class="oraszam">2.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">3.</th>
+                    <td><span class="ora">Tesi</span><span class="terem">TT2</span></td>
+                    <td><span class="ora">Történelem</span><span class="terem">35</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">35</span></td>
+                    <th class="oraszam">3.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">4.</th>
+                    <td><span class="ora">Matek</span><span class="terem">31</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">31</span></td>
+                    <td rowspan="2"><span class="ora">Angol</span><span class="terem">A2</span></td>
+                    <th class="oraszam">4.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">5.</th>
+                    <td><span class="ora">Fizika</span><span class="terem">35</span></td>
+                    <td rowspan="2"><span class="ora">Irodalom</span><span class="terem">35</span></td>
+                    <td rowspan="3"><span class="ora">Webprog.</span><span class="terem">CAD1</span></td>
+                    <th class="oraszam">5.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">6.</th>
+                    <td><span class="ora">Irodalom</span><span class="terem">35</span></td>
+                    <td><span class="ora">Szakmai Angol</span><span class="terem">19</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">35</span></td>
+                    <th class="oraszam">6.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">7.</th>
+                    <td><span class="ora">Nyelvtan</span><span class="terem">35</span></td>
+                    <td><span class="ora">Angol</span><span class="terem">A2</span></td>
+                    <td rowspan="2"><span class="ora">Adatbázis kezelés</span><span class="terem">HIDR</span></td>
+                    <td><span class="ora">Fizika</span><span class="terem">35</span></td>
+                    <th class="oraszam">7.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">8.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT1</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">8.</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2024/25 Órarend -->
+        <table id="t2024" class="orarend-table">
+            <thead>
+                <tr>
+                    <th class="oraszam-col"></th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                    <th class="oraszam-col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="oraszam">1.</th>
+                    <td rowspan="2"><span class="ora">Magyar</span><span class="terem">35</span></td>
+                    <td rowspan="2"><span class="ora">IKT</span><span class="terem">B2/4</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">1.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">2.</th>
+                    <td><span class="ora">Történelem</span><span class="terem">35</span></td>
+                    <td><span class="ora">Történelem</span><span class="terem">35</span></td>
+                    <td><span class="ora">Történelem</span><span class="terem">35</span></td>
+                    <th class="oraszam">2.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">3.</th>
+                    <td rowspan="2"><span class="ora">Digi. kult.</span><span class="terem">CNC-1</span></td>
+                    <td rowspan="3"><span class="ora">Prog. a. gy.</span><span class="terem">B2/4</span></td>
+                    <td rowspan="2"><span class="ora">Angol</span><span class="terem">31</span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT3</span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT3</span></td>
+                    <th class="oraszam">3.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">4.</th>
+                    <td><span class="ora">Magyar</span><span class="terem">35</span></td>
+                    <td><span class="ora">Pénzügy</span><span class="terem">35</span></td>
+                    <th class="oraszam">4.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">5.</th>
+                    <td><span class="ora">Tesi</span><span class="terem">TT3</span></td>
+                    <td><span class="ora">Tesi</span><span class="terem">TT3</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">35</span></td>
+                    <td><span class="ora">Magyar</span><span class="terem">35</span></td>
+                    <th class="oraszam">5.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">6.</th>
+                    <td><span class="ora">Fizika</span><span class="terem">A4</span></td>
+                    <td rowspan="3"><span class="ora">Inf. táv. gyak.</span><span class="terem">B2/4</span></td>
+                    <td><span class="ora">Inf. táv. elm.</span><span class="terem">35</span></td>
+                    <td><span class="ora">Fizika</span><span class="terem">35</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">6.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">7.</th>
+                    <td><span class="ora">Matek</span><span class="terem">34</span></td>
+                    <td rowspan="2"><span class="ora">Matek</span><span class="terem">35</span></td>
+                    <td rowspan="2"><span class="ora">Angol</span><span class="terem">21</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">7.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">8.</th>
+                    <td><span class="ora">Ofő</span><span class="terem">A4</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">8.</th>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- 2023/24 Órarend (Kijavítva a hiányzó végső oszlopokkal) -->
+        <table id="t2023" class="orarend-table">
+            <thead>
+                <tr>
+                    <th class="oraszam-col"></th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                    <th class="oraszam-col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="oraszam">1.</th>
+                    <td rowspan="2"><span class="ora">Prog. a. gy.</span><span class="terem">57</span></td>
+                    <td rowspan="2"><span class="ora">Angol</span><span class="terem">12</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">1.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">2.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">2.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">3.</th>
+                    <td rowspan="2"><span class="ora">IKT</span><span class="terem">57</span></td>
+                    <td rowspan="2"><span class="ora">Történelem</span><span class="terem">19</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">3.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">4.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">4.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">5.</th>
+                    <td rowspan="3"><span class="ora">Infor. és távk.</span><span class="terem">57</span></td>
+                    <td><span class="ora">Matek</span><span class="terem">35</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">5.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">6.</th>
+                    <td><span class="ora">Magyar</span><span class="terem">21</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">6.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">7.</th>
+                    <td rowspan="2"><span class="ora">Dig. kult.</span><span class="terem">52</span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">7.</th>
+                </tr>
+                <tr>
+                    <th class="oraszam">8.</th>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <td><span class="ora">-</span><span class="terem"></span></td>
+                    <th class="oraszam">8.</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function switchTable(tableId) {
+            document.querySelectorAll('.orarend-table').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            
+            document.getElementById(tableId).classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
