@@ -1,0 +1,313 @@
+{
+    "t2026_a": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "-", "terem": "" },
+                { "ora": "Matek", "terem": "71" },
+                { "ora": "Angol", "terem": "A2" },
+                { "ora": "Asztali alk. fejl.", "terem": "CAD1", "rowspan": 2 },
+                { "ora": "Angol", "terem": "26" }
+            ],
+            [
+                { "ora": "Webprog.", "terem": "CAD1", "rowspan": 2 },
+                { "ora": "Államp is.", "terem": "71" },
+                { "ora": "Történelem", "terem": "19", "rowspan": 2 },
+                null,
+                { "ora": "Magyar", "terem": "Padlástér", "rowspan": 2 }
+            ],
+            [
+                null,
+                { "ora": "Magyar", "terem": "71" },
+                null,
+                { "ora": "Szoftverfej.", "terem": "CAD2", "rowspan": 2 },
+                null
+            ],
+            [
+                { "ora": "Asztali alk. fej.", "terem": "CAD1" },
+                { "ora": "Matek", "terem": "71" },
+                { "ora": "Matek", "terem": "84" },
+                null,
+                { "ora": "Fizika", "terem": "19" }
+            ],
+            [
+                { "ora": "IKT", "terem": "CAD1", "rowspan": 3 },
+                { "ora": "Angol", "terem": "A5", "rowspan": 2 },
+                { "ora": "Tesi", "terem": "TT2" },
+                { "ora": "Adatbázis", "terem": "?/56", "rowspan": 2 },
+                { "ora": "Testnevelés", "terem": "TT1" }
+            ],
+            [
+                null,
+                null,
+                { "ora": "Irodalom", "terem": "A1" },
+                null,
+                { "ora": "Szakmai angol", "terem": "B2/7elm" }
+            ],
+            [
+                null,
+                { "ora": "Tesi", "terem": "TT1" },
+                { "ora": "-", "terem": "" },
+                { "ora": "Szakmai Angol", "terem": "B2/6elm", "rowspan": 2 },
+                { "ora": "-", "terem": "" }
+            ],
+            [
+                { "ora": "Matek", "terem": "A2" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                null,
+                { "ora": "-", "terem": "" }
+            ]
+        ]
+    },
+    "t2026_b": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "Matek", "terem": "85" },
+                { "ora": "Asztali alk. fejl.", "terem": "Hidraulika", "rowspan": 3 },
+                { "ora": "Magyar", "terem": "22" },
+                { "ora": "Matek", "terem": "Padlástér"  },
+                { "ora": "Szoftverfej.", "terem": "Hidraulika" }
+            ],
+            [
+                { "ora": "Webprog.", "terem": "CAD2" },
+                null,
+                { "ora": "Matek", "terem": "84" },
+                { "ora": "Magyar", "terem": "9"  },
+                { "ora": "Szakmai Angol", "terem": "9" }
+            ],
+            [
+                { "ora": "IKT", "terem": "MLAB" },
+                null,
+                { "ora": "Testnevelés", "terem": "TT2" },
+                { "ora": "Webprog.", "terem": "CNC-1"  },
+                { "ora": "IKT", "terem": "B2/5B" }
+            ],
+            [
+                { "ora": "Testnevelés", "terem": "Bet2" },
+                { "ora": "Testnevelés", "terem": "Bet1" },
+                { "ora": "IKT", "terem": "B2/5B" },
+                { "ora": "Adatbázis kezelés", "terem": "CAD1","rowspan": 2  },
+                { "ora": "Államp is.", "terem": "36" }
+            ],
+            [
+                { "ora": "Ofő", "terem": "84" },
+                { "ora": "Szakmai Angol", "terem": "26" },
+                { "ora": "Történelem", "terem": "35" },
+                null,
+                { "ora": "Matek", "terem": "29" }
+            ],
+            [
+                { "ora": "Magyar", "terem": "22" },
+                { "ora": "Szoftverfej.", "terem": "Hidraulika" },
+                { "ora": "Angol?", "terem": "-" },
+                { "ora": "Történelem", "terem": "Bet1" },
+                { "ora": "Fizika", "terem": "A1" }
+            ],
+            [
+                { "ora": "Angol?", "terem": "-" },
+                { "ora": "Angol?", "terem": "-" },
+                null,
+                { "ora": "-", "terem": "" },
+                { "ora": "Magyar", "terem": "31" },
+                { "ora": "Angol?", "terem": "-" }
+            ],
+            [
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" }
+            ]
+        ]
+    },
+    "t2026_c": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "", "terem": "" },
+                { "ora": "", "terem": "" },
+                { "ora": "Készül ", "terem": ""},
+                { "ora": "", "terem": "" },
+                { "ora": "", "terem": "" }
+            ]
+        ]
+    },
+    "t2025": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "-", "terem": "" },
+                { "ora": "Angol", "terem": "A2" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                { "ora": "Szakmai Angol", "terem": "Könyvtár olvasó" }
+            ],
+            [
+                { "ora": "Ofő", "terem": "35" },
+                { "ora": "Tesi", "terem": "TT2" },
+                { "ora": "Asztali prog.", "terem": "CAD2", "rowspan": 4 },
+                { "ora": "Történelem", "terem": "35" },
+                { "ora": "IKT", "terem": "57", "rowspan": 3 }
+            ],
+            [
+                { "ora": "Tesi", "terem": "TT2" },
+                { "ora": "Történelem", "terem": "35" },
+                null,
+                { "ora": "Matek", "terem": "35" },
+                null
+            ],
+            [
+                { "ora": "Matek", "terem": "31" },
+                { "ora": "Matek", "terem": "31" },
+                null,
+                { "ora": "Angol", "terem": "A2", "rowspan": 2 },
+                null
+            ],
+            [
+                { "ora": "Fizika", "terem": "35" },
+                { "ora": "Irodalom", "terem": "35", "rowspan": 2 },
+                null,
+                null,
+                { "ora": "Webprog.", "terem": "CAD1", "rowspan": 3 }
+            ],
+            [
+                { "ora": "Irodalom", "terem": "35" },
+                null,
+                { "ora": "Szakmai Angol", "terem": "19" },
+                { "ora": "Matek", "terem": "35" },
+                null
+            ],
+            [
+                { "ora": "Nyelvtan", "terem": "35" },
+                { "ora": "Angol", "terem": "A2" },
+                { "ora": "Adatbázis kezelés", "terem": "HIDR", "rowspan": 2 },
+                { "ora": "Fizika", "terem": "35" },
+                null
+            ],
+            [
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                null,
+                { "ora": "Tesi", "terem": "TT1" },
+                { "ora": "-", "terem": "" }
+            ]
+        ]
+    },
+    "t2024": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "Magyar", "terem": "35", "rowspan": 2 },
+                { "ora": "IKT", "terem": "B2/4", "rowspan": 2 },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" }
+            ],
+            [
+                null, null,
+                { "ora": "Történelem", "terem": "35" },
+                { "ora": "Történelem", "terem": "35" },
+                { "ora": "Történelem", "terem": "35" }
+            ],
+            [
+                { "ora": "Digi. kult.", "terem": "CNC-1", "rowspan": 2 },
+                { "ora": "Prog. a. gy.", "terem": "B2/4", "rowspan": 3 },
+                { "ora": "Angol", "terem": "31", "rowspan": 2 },
+                { "ora": "Tesi", "terem": "TT3" },
+                { "ora": "Tesi", "terem": "TT3" }
+            ],
+            [
+                null, null, null,
+                { "ora": "Magyar", "terem": "35" },
+                { "ora": "Pénzügy", "terem": "35" }
+            ],
+            [
+                { "ora": "Tesi", "terem": "TT3" },
+                null,
+                { "ora": "Tesi", "terem": "TT3" },
+                { "ora": "Matek", "terem": "35" },
+                { "ora": "Magyar", "terem": "35" }
+            ],
+            [
+                { "ora": "Fizika", "terem": "A4" },
+                { "ora": "Inf. táv. gyak.", "terem": "B2/4", "rowspan": 3 },
+                { "ora": "Inf. táv. elm.", "terem": "35" },
+                { "ora": "Fizika", "terem": "35" },
+                { "ora": "-", "terem": "" }
+            ],
+            [
+                { "ora": "Matek", "terem": "34" },
+                null,
+                { "ora": "Matek", "terem": "35", "rowspan": 2 },
+                { "ora": "Angol", "terem": "21", "rowspan": 2 },
+                { "ora": "-", "terem": "" }
+            ],
+            [
+                { "ora": "Ofő", "terem": "A4" },
+                null, null, null,
+                { "ora": "-", "terem": "" }
+            ]
+        ]
+    },
+    "t2023": {
+        "napok": ["Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek"],
+        "orak": [
+            [
+                { "ora": "Prog. a. gy.", "terem": "57", "rowspan": 2 },
+                { "ora": "Angol", "terem": "12", "rowspan": 2 },
+                { "ora": "Magyar", "terem": "34" },
+                { "ora": "Testnevelés", "terem": "TT" },
+                { "ora": "Fizika", "terem": "35" }
+            ],
+            [
+                null, null,
+                { "ora": "Komplex", "terem": "35" },
+                { "ora": "Angol", "terem": "A2", "rowspan": 2 },
+                { "ora": "Történelem", "terem": "35" }
+            ],
+            [
+                { "ora": "IKT", "terem": "57", "rowspan": 2 },
+                { "ora": "Történelem", "terem": "19", "rowspan": 2 },
+                { "ora": "Matek", "terem": "35" },
+                null,
+                { "ora": "Testnevelés", "terem": "TT" }
+            ],
+            [
+                null, null,
+                { "ora": "Fizika", "terem": "35" },
+                { "ora": "Matek", "terem": "35" },
+                { "ora": "Komplex", "terem": "A5" }
+            ],
+            [
+                { "ora": "Inftáv. a. gyak.", "terem": "57", "rowspan": 3 },
+                { "ora": "Matek", "terem": "35" },
+                { "ora": "Matek", "terem": "35" },
+                { "ora": "Ofő", "terem": "35" },
+                { "ora": "Komplex", "terem": "A4" }
+            ],
+            [
+                null,
+                { "ora": "Magyar", "terem": "21" },
+                { "ora": "Testnevelés", "terem": "U", "rowspan": 2 },
+                { "ora": "Magyar", "terem": "35" },
+                { "ora": "Magyar", "terem": "9" }
+            ],
+            [
+                null,
+                { "ora": "Dig. kult.", "terem": "52", "rowspan": 2 },
+                null,
+                { "ora": "-", "terem": "" },
+                { "ora": "-", "terem": "" }
+            ],
+            [
+                { "ora": "-", "terem": "" }, 
+                { "ora": "-", "terem": "" }, 
+                { "ora": "-", "terem": "" }, 
+                { "ora": "-", "terem": "" }, 
+                null
+            ]
+        ]
+    }
+}
